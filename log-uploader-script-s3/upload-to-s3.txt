@@ -1,0 +1,5 @@
+Scenario - Banking client had a very good observabiltiy setup using ELK stack. ELK stack had logs from multiple sources like infra, jenkins build logs and microservices logs deployed on K8's. Their costing was 
+very high and they were looking to optimize the solution. Their stack wasn't managed instance but hosted in the bank's data center situated in US. So basically huge amount of logs flowed from jenkins builds from 
+various environments & these were only stored only from a backup perspectives. I also checked what is the notification mechanism if a build gets failed on jenkins, they are getting mails with the error message. 
+So keeping these error logs doesn't actually make sense in the ELK stack. I found out a scripting solution is required where all the build logs from this jenkins build instance has to be uploaded to S3 buckets and 
+can be further marked asglacier or deep archieve class.
